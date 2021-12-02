@@ -6,13 +6,8 @@ import re
 
 with open('input2.txt') as f:
     directions = f.read().split("\n")
-
-forward = [int(re.search('forward (\d+)',d).group(1)) for d in directions if re.search('forward (\d+)',d)]
-down = [int(re.search('down (\d+)',d).group(1)) for d in directions if re.search('down (\d+)',d)]
-up = [int(re.search('up (\d+)',d).group(1)) for d in directions if re.search('up (\d+)',d)]
-
 #1
-print(sum(forward) * (sum(down)-sum(up)))
+print(sum([int(re.search('forward (\d+)',d).group(1)) for d in directions if re.search('forward (\d+)',d)]) * (sum([int(re.search('down (\d+)',d).group(1)) for d in directions if re.search('down (\d+)',d)]) - sum([int(re.search('up (\d+)',d).group(1)) for d in directions if re.search('up (\d+)',d)])))
 
 #2
 f = 0
