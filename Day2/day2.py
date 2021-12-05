@@ -29,3 +29,4 @@ for direct in directions:
         a -= u
 
 print(h*depth)
+
