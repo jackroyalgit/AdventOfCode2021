@@ -70,19 +70,3 @@ for i in range(0,width):
 
 
 print(int(oxygen[0],2) * int(c02[0],2))
-   
-    # check = gamma[i]
-    # print(i)
-    # for num in numbers:
-    #     if(num[i] != check):
-    #         oxygen.append(num)
-    
-    # l3 = [x for x in numbers if x not in oxygen]
-    # numbers = l3
-
-    # print("l3")
-    # print(l3)
-    # print("oxygen")
-    # print(oxygen)
-    # print(numbers)
-
