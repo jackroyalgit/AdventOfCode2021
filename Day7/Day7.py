@@ -7,8 +7,8 @@ with open('input.txt') as f:
 
 #part 2
 numbers = np.array(numbers).astype(int)
-numbermean = int(round(sum(numbers)/len(numbers)))
-
+numbermean = int(round(sum(numbers)/len(numbers)))+1000
+numbermean = 1
 # calculates fuel value for part 2
 def calculate(positions, anchor):
     total = 0
